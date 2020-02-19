@@ -295,12 +295,16 @@ body {
     position: absolute;
 }
 .tab {
-    font-family: Roboto, bold;
+    display: flex;
+    font-family: 'Roboto bold', sans-serif;
     text-decoration: none;
     text-transform: uppercase;
-    margin: 15px 0;
     color: #e1e1e1;
-
+    justify-content: space-between;
+    margin: 15px 10px;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 700;
 }
 .tab:hover {
     color: #333;
@@ -309,17 +313,95 @@ body {
 .tab.active {
     color:#333;
 }
-.tab:after{
-    display: block;
-    position: absolute;
-    margin: 0;
+.tabs__inner {
+    display: flex;
+    justify-content: center;
+    margin: 0 18%;
+}
+.slash {
+    margin: 7px 10px;
     padding: 0;
-    height: 10px;
-    width: 10px;
-    -webkit-transform: rotate(-25deg);
-    -moz-transform: rotate(-25deg);
-    -o-transform: rotate(-25deg);
-    -ms-transform: rotate(-25deg);
+    height: 30px;
+    width: 1px;
+    -webkit-transform: rotate(25deg);
+    -moz-transform: rotate(25deg);
+    -o-transform: rotate(25deg);
+    -ms-transform: rotate(25deg);
     color: #e1e1e1;
     background-color: #e1e1e1;
+}
+.images {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.left,
+.right {
+    width: 100%;
+    max-width: 362px;
+}
+.center {
+    width: 100%;
+    max-width: 364px;
+}
+.img {
+    background: #000;
+}
+.left img:hover,
+.right img:hover,
+.center img:hover {
+    opacity: .5;
+    transition: opacity .2s linear; 
+}
+.button {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+.btn {
+    color: #fff;
+    background: #959595;
+    border: 10px solid #959595;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: inline-block;
+    width: 125px;
+    text-align: center;
+    font-family: 'Roboto bold', sans-serif;
+    font-weight: 700;
+}
+.footer {
+    box-shadow: 0 -10px 20px 0 rgba(0,0,0,.25);
+}
+.flogo {
+    display: flex;
+    justify-content: center;
+}
+.flogo img {
+    height: 35px;
+    width: 131px;
+    margin: 30px 0;
+}
+.share__icons {
+    width: 100%;
+    max-width: 1600px;
+    height: 65px;
+    border: 1px solid #e1e1e1;
+    margin: 10px 0;
+}
+.icons__inner {
+    display: flex;
+    justify-content: center;
+    margin-top: 26px;
+}
+.copyright {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: #e1e1e1;
+}
+.copyright b {
+    color:#333;
 }
